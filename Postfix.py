@@ -1,19 +1,20 @@
 # prob = raw_input("Display the problem in postfix notation? ")
 # print ("The problem you displayed is"), prob
 
-prob = raw_input("Display the problem in postfix notation (example: 102 36 74 65 + * /): ")
+prob = raw_input(
+    "Display the problem in postfix notation (example: 102 36 74 65 + * /): ")
 val = input("How many values did you input (include digits and symbols): ")
-val1 = (val)/2
+val1 = (val) / 2
 
-tokens = prob.split() # returns a list (ArrayList) of tokenized values
-coords = []     # initialise empty list
+tokens = prob.split()  # returns a list (ArrayList) of tokenized values
+coords = []  # initialise empty list
 for tkn in tokens:
     try:
-        coords.append(tkn)     # convert token to string
-    except ValueError:       # if the input was of invalid format
+        coords.append(tkn)  # convert token to string
+    except ValueError:  # if the input was of invalid format
         print("Invalid format: {}".format(tkn))
         raise
-print(coords)   # coords is now a list of integers that were entered
+print(coords)  # coords is now a list of integers that were entered
 
 el = coords
 i = 0

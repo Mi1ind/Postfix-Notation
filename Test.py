@@ -3,7 +3,7 @@ coords = ["21", "132", "645", "+", "-"]
 el = coords
 print(el)
 
-val = 5 #number of digits and symbold in coords
+val = 5  #number of digits and symbold in coords
 
 i = 0
 while i < val:
